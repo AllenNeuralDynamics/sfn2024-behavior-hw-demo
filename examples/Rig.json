@@ -1,0 +1,193 @@
+{
+  "aind_behavior_services_pkg_version": "0.8.0-rc1",
+  "version": "0.0.0",
+  "computer_name": "na",
+  "rig_name": "test_rig",
+  "harp_lickometer": {
+    "device_type": "lickometer",
+    "additional_settings": null,
+    "calibration": null,
+    "who_am_i": 1400,
+    "serial_number": null,
+    "port_name": "COM5"
+  },
+  "harp_treadmill": {
+    "device_type": "treadmill",
+    "additional_settings": null,
+    "calibration": {
+      "device_name": "Treadmill",
+      "input": {},
+      "output": {
+        "wheel_diameter": 15.0,
+        "pulses_per_revolution": 28800,
+        "invert_direction": false,
+        "brake_lookup_calibration": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            65535.0
+          ]
+        ]
+      },
+      "date": null,
+      "description": "Calibration of the treadmill system",
+      "notes": null
+    },
+    "who_am_i": 1402,
+    "serial_number": null,
+    "port_name": "COM8"
+  },
+  "manipulator": {
+    "device_type": "stepperdriver",
+    "additional_settings": {
+      "spout_axis": 2
+    },
+    "calibration": {
+      "device_name": "AindManipulator",
+      "input": {
+        "full_step_to_mm": {
+          "x": 0.01,
+          "y1": 0.01,
+          "y2": 0.01,
+          "z": 0.01
+        },
+        "axis_configuration": [
+          {
+            "axis": 2,
+            "step_acceleration_interval": 100,
+            "step_interval": 100,
+            "microstep_resolution": 0,
+            "maximum_step_interval": 2000,
+            "motor_operation_mode": 0,
+            "max_limit": 25.0,
+            "min_limit": -0.01
+          },
+          {
+            "axis": 3,
+            "step_acceleration_interval": 100,
+            "step_interval": 100,
+            "microstep_resolution": 0,
+            "maximum_step_interval": 2000,
+            "motor_operation_mode": 0,
+            "max_limit": 25.0,
+            "min_limit": -0.01
+          },
+          {
+            "axis": 1,
+            "step_acceleration_interval": 100,
+            "step_interval": 100,
+            "microstep_resolution": 0,
+            "maximum_step_interval": 2000,
+            "motor_operation_mode": 0,
+            "max_limit": 25.0,
+            "min_limit": -0.01
+          },
+          {
+            "axis": 4,
+            "step_acceleration_interval": 100,
+            "step_interval": 100,
+            "microstep_resolution": 0,
+            "maximum_step_interval": 2000,
+            "motor_operation_mode": 0,
+            "max_limit": 25.0,
+            "min_limit": -0.01
+          }
+        ],
+        "homing_order": [
+          2,
+          3,
+          1,
+          4
+        ],
+        "initial_position": {
+          "x": 0.0,
+          "y1": 0.0,
+          "y2": 0.0,
+          "z": 0.0
+        }
+      },
+      "output": {},
+      "date": null,
+      "description": "Calibration of the load cells system",
+      "notes": null
+    },
+    "who_am_i": 1130,
+    "serial_number": null,
+    "port_name": "COM9"
+  },
+  "screen": {
+    "device_type": "Screen",
+    "additional_settings": null,
+    "calibration": {
+      "left": {
+        "intrinsics": {
+          "frame_width": 1920,
+          "frame_height": 1080,
+          "display_width": 20.0,
+          "display_height": 15.0
+        },
+        "extrinsics": {
+          "rotation": {
+            "x": 0.0,
+            "y": 1.0472,
+            "z": 0.0
+          },
+          "translation": {
+            "x": -16.6917756,
+            "y": 1.309016,
+            "z": -3.575264
+          }
+        }
+      },
+      "center": {
+        "intrinsics": {
+          "frame_width": 1920,
+          "frame_height": 1080,
+          "display_width": 20.0,
+          "display_height": 15.0
+        },
+        "extrinsics": {
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "translation": {
+            "x": 0.0,
+            "y": 1.309016,
+            "z": -13.27
+          }
+        }
+      },
+      "right": {
+        "intrinsics": {
+          "frame_width": 1920,
+          "frame_height": 1080,
+          "display_width": 20.0,
+          "display_height": 15.0
+        },
+        "extrinsics": {
+          "rotation": {
+            "x": 0.0,
+            "y": -1.0472,
+            "z": 0.0
+          },
+          "translation": {
+            "x": 16.6917756,
+            "y": 1.309016,
+            "z": -3.575264
+          }
+        }
+      }
+    },
+    "display_index": 1,
+    "target_render_frequency": 60.0,
+    "target_update_frequency": 120.0,
+    "texture_assets_directory": "Textures",
+    "brightness": 0.0,
+    "contrast": 1.0
+  }
+}
